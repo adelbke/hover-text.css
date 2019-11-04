@@ -1,0 +1,14 @@
+{
+  "name": "hover-text.css",
+  "version": "1.0.0",
+  "description": "a library that contains hover-animations for text only",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  },
+  "scripts": {
+      "scss":"node-sass --watch scss -o css"
+  },
+  "sass": "scss/text-hover.scss",
+  "style": "css/text-hover.css",
+  "main": "css/text-hover.css"
+}

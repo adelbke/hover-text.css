@@ -1,0 +1,35 @@
+// hvr-y-right-to-left
+
+.hvr-y-left-to-right:hover{
+    text-decoration:none;
+}
+// bottom line
+    .hvr-y-left-to-right:after{
+        bottom:0;
+        content:"";
+        display:block;
+        height:$underline-width;
+        left:0%;
+        position:relative;
+        transition: width $animation-speed ease 0s;
+        width: 0;
+        background: none repeat scroll 0 0 $line-color;
+    }
+    .hvr-y-left-to-right:hover:after{
+        width:100%;
+    }
+
+// top line
+    .hvr-y-left-to-right:before{
+        bottom:0;
+        content:"";
+        display:block;
+        height:$underline-width;
+        position:relative;
+        transition: width $animation-speed ease 0s;
+        width: 0;
+        background: none repeat scroll 0 0 $line-color;
+    }
+    .hvr-y-left-to-right:hover:before{
+        width:100%;
+    }

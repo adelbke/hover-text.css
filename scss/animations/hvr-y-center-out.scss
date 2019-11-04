@@ -1,0 +1,38 @@
+// hvr-y-right-to-left
+
+.hvr-y-center-out:hover{
+    text-decoration:none;
+}
+// bottom line
+    .hvr-y-center-out:after{
+        bottom:0;
+        content:"";
+        display:block;
+        height:$underline-width;
+        left:50%;
+        position:relative;
+        transition: width $animation-speed ease 0s,left $animation-speed ease 0s;
+        width: 0;
+        background: none repeat scroll 0 0 $line-color;
+    }
+    .hvr-y-center-out:hover:after{
+        width:100%;
+        left:0;
+    }
+
+// top line
+    .hvr-y-center-out:before{
+        bottom:0;
+        content:"";
+        display:block;
+        height:$underline-width;
+        position:relative;
+        left:50%;
+        transition: width $animation-speed ease 0s,left $animation-speed ease 0s;
+        width: 0;
+        background: none repeat scroll 0 0 $line-color;
+    }
+    .hvr-y-center-out:hover:before{
+        width:100%;
+        left:0;
+    }

@@ -1,0 +1,20 @@
+// hvr-underline-center-out
+.hvr-underline-center-out:hover{
+    text-decoration: none;
+}
+.hvr-underline-center-out:after{
+    bottom: 0;
+    content: "";
+    display: block;
+    height: $underline-width;
+    left:50%;
+    position: relative;
+    transition: width $animation-speed ease 0s,left 0.3s ease 0s;
+    width: 0;
+    background: none repeat scroll 0 0 $line-color;
+}
+
+.hvr-underline-center-out:hover:after{
+    width: 100%;
+    left:0;
+}

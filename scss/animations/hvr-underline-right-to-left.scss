@@ -1,0 +1,20 @@
+// hvr-underline-right-to-left
+.hvr-underline-right-to-left:hover{
+    text-decoration: none;
+}
+.hvr-underline-right-to-left:after{
+    bottom: 0;
+    content: "";
+    display: block;
+    height: $underline-width;
+    left:100%;
+    position: relative;
+    transition: width $animation-speed ease 0s,left 0.3s ease 0s;
+    width: 0;
+    background: none repeat scroll 0 0 $line-color;
+}
+
+.hvr-underline-right-to-left:hover:after{
+    width: 100%;
+    left:0;
+}
