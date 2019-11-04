@@ -1,14 +1,17 @@
 {
   "name": "hover-text.css",
   "version": "1.0.0",
-  "description": "a library that contains hover-animations for text only",
+  "description": "a library that contains hover-animations specifically for text only",
   "dependencies": {
     "node-sass": "^4.13.0"
   },
+  "keywords": ["animation","text","hover","text-hover","animate"],
+  "repository": {"url":"https://github.com/Quickinline/hover-text.css"},
   "scripts": {
       "scss":"node-sass --watch scss -o css"
   },
   "sass": "scss/text-hover.scss",
   "style": "css/text-hover.css",
-  "main": "css/text-hover.css"
+  "main": "css/text-hover.css",
+  "author": "Bouhraoua Kamel Eddine Adel <adelbouhraoua23@gmail.com>"
 }
