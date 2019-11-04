@@ -18,7 +18,7 @@ a list of animations specifically designed for text content only (the list is sh
 
 ## How To Use
 
-hover-text.css is a list of ready to use classes that add hover animations to text. there are some possible modifications that can be done through [sass](#sass).
+hover-text.css is a list of ready to use classes that add hover animations to text. there are some possible modifications that can be done through [Sass Customization](#sass-customization).
 
 **notice** the targeted text should be wrapped in an element that is the same width as the text itself
 
@@ -97,5 +97,16 @@ All you have to do is add a class from the list to the concerned text to output 
         </form>
     </div>
 </nav>
+
+```
+
+## C. Sass Customization
+
+for now there's 3 values to customize among these animations
+
+``` scss
+$animation-speed: 0.3s;
+$underline-width :2px;
+$line-color: #007bff;
 
 ```
